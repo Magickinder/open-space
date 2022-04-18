@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="images/mars.png" alt="planetImage">
+            <img class="rocket" src="images/rocket.png" alt="rocketImage" style="left: 29rem; top: 28rem">
+        </div>
+
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" name="password" id="password" placeholder="Enter password to unlock">
+                <input type="button" id="ok-btn" value="OK" onclick="logIn()">
+                <div class="check-buttons">
+                    <input type="checkbox" name="check1" id="check1" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="checkbox" name="check2" id="check2" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="checkbox" name="check3" id="check3" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="checkbox" name="check4" id="check4" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="checkbox" name="check5" id="check5" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="checkbox" name="check6" id="check6" disabled onchange="checkIfRocketIsPreparedForStart()">
+                </div>
+                <div class="levers">
+                    <input type="range" name="lever1" id="lever1" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="range" name="lever2" id="lever2" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="range" name="lever3" id="lever3" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="range" name="lever4" id="lever4" disabled onchange="checkIfRocketIsPreparedForStart()">
+                    <input type="range" name="lever5" id="lever5" disabled onchange="checkIfRocketIsPreparedForStart()">
+                </div>
+                <input type="button" id="launch-btn" value="Launch" disabled onclick="launchRocket()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
